@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7FA69D6DF0A394DA1DCA20 /* libPods-rfidemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D5FF4B6F654D8791D1F36B /* libPods-rfidemo.a */; };
 		F9739FBC1E4ECBBB00613F4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9739FBB1E4ECBBB00613F4E /* main.m */; };
 		F9739FBF1E4ECBBB00613F4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9739FBE1E4ECBBB00613F4E /* AppDelegate.m */; };
 		F9739FC21E4ECBBB00613F4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9739FC11E4ECBBB00613F4E /* ViewController.m */; };
 		F9739FC51E4ECBBB00613F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9739FC31E4ECBBB00613F4E /* Main.storyboard */; };
 		F9739FC71E4ECBBB00613F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9739FC61E4ECBBB00613F4E /* Assets.xcassets */; };
 		F9739FCA1E4ECBBB00613F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9739FC81E4ECBBB00613F4E /* LaunchScreen.storyboard */; };
+		F974A43E1E50C3D900F683BC /* RFICardThreeDs.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4261E50C3D900F683BC /* RFICardThreeDs.m */; };
+		F974A43F1E50C3D900F683BC /* RFICardTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4281E50C3D900F683BC /* RFICardTokenRequest.m */; };
+		F974A4401E50C3D900F683BC /* RFICardTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A42A1E50C3D900F683BC /* RFICardTokenResponse.m */; };
+		F974A4411E50C3D900F683BC /* RFICommissionMode.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A42C1E50C3D900F683BC /* RFICommissionMode.m */; };
+		F974A4421E50C3D900F683BC /* RFIConnectionProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A42E1E50C3D900F683BC /* RFIConnectionProfile.m */; };
+		F974A4431E50C3D900F683BC /* RFIHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4301E50C3D900F683BC /* RFIHelpers.m */; };
+		F974A4441E50C3D900F683BC /* RFIPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4331E50C3D900F683BC /* RFIPaymentRequest.m */; };
+		F974A4451E50C3D900F683BC /* RFIPaymentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4351E50C3D900F683BC /* RFIPaymentResponse.m */; };
+		F974A4461E50C3D900F683BC /* RFIPayService.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4371E50C3D900F683BC /* RFIPayService.m */; };
+		F974A4471E50C3D900F683BC /* RFIRestRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A4391E50C3D900F683BC /* RFIRestRequester.m */; };
+		F974A4481E50C3D900F683BC /* RFISigner.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A43B1E50C3D900F683BC /* RFISigner.m */; };
+		F974A4491E50C3D900F683BC /* RFITransactionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A43D1E50C3D900F683BC /* RFITransactionDetails.m */; };
+		F974A44C1E50C40400F683BC /* FSRFIAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A44B1E50C40400F683BC /* FSRFIAPI.m */; };
+		F974A44F1E50C49C00F683BC /* FSCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F974A44D1E50C49C00F683BC /* FSCreditCard.m */; };
+		F974A4521E50C59E00F683BC /* card_3ds_form in Resources */ = {isa = PBXBuildFile; fileRef = F974A4511E50C59E00F683BC /* card_3ds_form */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4D5FF4B6F654D8791D1F36B /* libPods-rfidemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rfidemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1B3D206A268082266AFBA1 /* Pods-rfidemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rfidemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rfidemo/Pods-rfidemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E37A5800C84CF6AD288567 /* Pods-rfidemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rfidemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-rfidemo/Pods-rfidemo.release.xcconfig"; sourceTree = "<group>"; };
 		F9739FB71E4ECBBB00613F4E /* rfidemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rfidemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9739FBB1E4ECBBB00613F4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9739FBD1E4ECBBB00613F4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +45,36 @@
 		F9739FC61E4ECBBB00613F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9739FC91E4ECBBB00613F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9739FCB1E4ECBBB00613F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F974A4251E50C3D900F683BC /* RFICardThreeDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFICardThreeDs.h; sourceTree = "<group>"; };
+		F974A4261E50C3D900F683BC /* RFICardThreeDs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFICardThreeDs.m; sourceTree = "<group>"; };
+		F974A4271E50C3D900F683BC /* RFICardTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFICardTokenRequest.h; sourceTree = "<group>"; };
+		F974A4281E50C3D900F683BC /* RFICardTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFICardTokenRequest.m; sourceTree = "<group>"; };
+		F974A4291E50C3D900F683BC /* RFICardTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFICardTokenResponse.h; sourceTree = "<group>"; };
+		F974A42A1E50C3D900F683BC /* RFICardTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFICardTokenResponse.m; sourceTree = "<group>"; };
+		F974A42B1E50C3D900F683BC /* RFICommissionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFICommissionMode.h; sourceTree = "<group>"; };
+		F974A42C1E50C3D900F683BC /* RFICommissionMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFICommissionMode.m; sourceTree = "<group>"; };
+		F974A42D1E50C3D900F683BC /* RFIConnectionProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIConnectionProfile.h; sourceTree = "<group>"; };
+		F974A42E1E50C3D900F683BC /* RFIConnectionProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIConnectionProfile.m; sourceTree = "<group>"; };
+		F974A42F1E50C3D900F683BC /* RFIHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIHelpers.h; sourceTree = "<group>"; };
+		F974A4301E50C3D900F683BC /* RFIHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIHelpers.m; sourceTree = "<group>"; };
+		F974A4311E50C3D900F683BC /* RFIPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIPay.h; sourceTree = "<group>"; };
+		F974A4321E50C3D900F683BC /* RFIPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIPaymentRequest.h; sourceTree = "<group>"; };
+		F974A4331E50C3D900F683BC /* RFIPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIPaymentRequest.m; sourceTree = "<group>"; };
+		F974A4341E50C3D900F683BC /* RFIPaymentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIPaymentResponse.h; sourceTree = "<group>"; };
+		F974A4351E50C3D900F683BC /* RFIPaymentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIPaymentResponse.m; sourceTree = "<group>"; };
+		F974A4361E50C3D900F683BC /* RFIPayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIPayService.h; sourceTree = "<group>"; };
+		F974A4371E50C3D900F683BC /* RFIPayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIPayService.m; sourceTree = "<group>"; };
+		F974A4381E50C3D900F683BC /* RFIRestRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIRestRequester.h; sourceTree = "<group>"; };
+		F974A4391E50C3D900F683BC /* RFIRestRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIRestRequester.m; sourceTree = "<group>"; };
+		F974A43A1E50C3D900F683BC /* RFISigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFISigner.h; sourceTree = "<group>"; };
+		F974A43B1E50C3D900F683BC /* RFISigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFISigner.m; sourceTree = "<group>"; };
+		F974A43C1E50C3D900F683BC /* RFITransactionDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFITransactionDetails.h; sourceTree = "<group>"; };
+		F974A43D1E50C3D900F683BC /* RFITransactionDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFITransactionDetails.m; sourceTree = "<group>"; };
+		F974A44A1E50C40400F683BC /* FSRFIAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRFIAPI.h; sourceTree = "<group>"; };
+		F974A44B1E50C40400F683BC /* FSRFIAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRFIAPI.m; sourceTree = "<group>"; };
+		F974A44D1E50C49C00F683BC /* FSCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCreditCard.m; sourceTree = "<group>"; };
+		F974A44E1E50C49C00F683BC /* FSCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCreditCard.h; sourceTree = "<group>"; };
+		F974A4511E50C59E00F683BC /* card_3ds_form */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = card_3ds_form; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +82,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7FA69D6DF0A394DA1DCA20 /* libPods-rfidemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F50982E0E13A8C6D25F930F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5FF4B6F654D8791D1F36B /* libPods-rfidemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E392E4DC1A08B3F6A9F0BB2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1B3D206A268082266AFBA1 /* Pods-rfidemo.debug.xcconfig */,
+				F3E37A5800C84CF6AD288567 /* Pods-rfidemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F9739FAE1E4ECBBB00613F4E = {
 			isa = PBXGroup;
 			children = (
 				F9739FB91E4ECBBB00613F4E /* rfidemo */,
 				F9739FB81E4ECBBB00613F4E /* Products */,
+				E392E4DC1A08B3F6A9F0BB2F /* Pods */,
+				0F50982E0E13A8C6D25F930F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +127,10 @@
 		F9739FB91E4ECBBB00613F4E /* rfidemo */ = {
 			isa = PBXGroup;
 			children = (
-				F9739FBD1E4ECBBB00613F4E /* AppDelegate.h */,
-				F9739FBE1E4ECBBB00613F4E /* AppDelegate.m */,
-				F9739FC01E4ECBBB00613F4E /* ViewController.h */,
-				F9739FC11E4ECBBB00613F4E /* ViewController.m */,
+				F974A4561E50D0F100F683BC /* App Deligate */,
+				F974A4551E50D0E300F683BC /* Controllers */,
+				F974A4531E50D0BC00F683BC /* Models */,
+				F974A4501E50C59300F683BC /* Resources */,
 				F9739FC31E4ECBBB00613F4E /* Main.storyboard */,
 				F9739FC61E4ECBBB00613F4E /* Assets.xcassets */,
 				F9739FC81E4ECBBB00613F4E /* LaunchScreen.storyboard */,
@@ -79,6 +148,84 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F974A4241E50C39F00F683BC /* RFI */ = {
+			isa = PBXGroup;
+			children = (
+				F974A4251E50C3D900F683BC /* RFICardThreeDs.h */,
+				F974A4261E50C3D900F683BC /* RFICardThreeDs.m */,
+				F974A4271E50C3D900F683BC /* RFICardTokenRequest.h */,
+				F974A4281E50C3D900F683BC /* RFICardTokenRequest.m */,
+				F974A4291E50C3D900F683BC /* RFICardTokenResponse.h */,
+				F974A42A1E50C3D900F683BC /* RFICardTokenResponse.m */,
+				F974A42B1E50C3D900F683BC /* RFICommissionMode.h */,
+				F974A42C1E50C3D900F683BC /* RFICommissionMode.m */,
+				F974A42D1E50C3D900F683BC /* RFIConnectionProfile.h */,
+				F974A42E1E50C3D900F683BC /* RFIConnectionProfile.m */,
+				F974A42F1E50C3D900F683BC /* RFIHelpers.h */,
+				F974A4301E50C3D900F683BC /* RFIHelpers.m */,
+				F974A4311E50C3D900F683BC /* RFIPay.h */,
+				F974A4321E50C3D900F683BC /* RFIPaymentRequest.h */,
+				F974A4331E50C3D900F683BC /* RFIPaymentRequest.m */,
+				F974A4341E50C3D900F683BC /* RFIPaymentResponse.h */,
+				F974A4351E50C3D900F683BC /* RFIPaymentResponse.m */,
+				F974A4361E50C3D900F683BC /* RFIPayService.h */,
+				F974A4371E50C3D900F683BC /* RFIPayService.m */,
+				F974A4381E50C3D900F683BC /* RFIRestRequester.h */,
+				F974A4391E50C3D900F683BC /* RFIRestRequester.m */,
+				F974A43A1E50C3D900F683BC /* RFISigner.h */,
+				F974A43B1E50C3D900F683BC /* RFISigner.m */,
+				F974A43C1E50C3D900F683BC /* RFITransactionDetails.h */,
+				F974A43D1E50C3D900F683BC /* RFITransactionDetails.m */,
+			);
+			name = RFI;
+			sourceTree = "<group>";
+		};
+		F974A4501E50C59300F683BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F974A4511E50C59E00F683BC /* card_3ds_form */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F974A4531E50D0BC00F683BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F974A44A1E50C40400F683BC /* FSRFIAPI.h */,
+				F974A44B1E50C40400F683BC /* FSRFIAPI.m */,
+				F974A4541E50D0D200F683BC /* Entities */,
+				F974A4241E50C39F00F683BC /* RFI */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F974A4541E50D0D200F683BC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F974A44D1E50C49C00F683BC /* FSCreditCard.m */,
+				F974A44E1E50C49C00F683BC /* FSCreditCard.h */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		F974A4551E50D0E300F683BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9739FC01E4ECBBB00613F4E /* ViewController.h */,
+				F9739FC11E4ECBBB00613F4E /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F974A4561E50D0F100F683BC /* App Deligate */ = {
+			isa = PBXGroup;
+			children = (
+				F9739FBD1E4ECBBB00613F4E /* AppDelegate.h */,
+				F9739FBE1E4ECBBB00613F4E /* AppDelegate.m */,
+			);
+			name = "App Deligate";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9739FCE1E4ECBBB00613F4E /* Build configuration list for PBXNativeTarget "rfidemo" */;
 			buildPhases = (
+				4944D0103E77B09DBC2B37FF /* [CP] Check Pods Manifest.lock */,
 				F9739FB31E4ECBBB00613F4E /* Sources */,
 				F9739FB41E4ECBBB00613F4E /* Frameworks */,
 				F9739FB51E4ECBBB00613F4E /* Resources */,
+				6E7049030EE3F915DFC5C4B6 /* [CP] Embed Pods Frameworks */,
+				78BE492289F9C88EBCBE3EDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +260,6 @@
 				TargetAttributes = {
 					F9739FB61E4ECBBB00613F4E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AVE5H6VW3S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,10 +290,59 @@
 				F9739FCA1E4ECBBB00613F4E /* LaunchScreen.storyboard in Resources */,
 				F9739FC71E4ECBBB00613F4E /* Assets.xcassets in Resources */,
 				F9739FC51E4ECBBB00613F4E /* Main.storyboard in Resources */,
+				F974A4521E50C59E00F683BC /* card_3ds_form in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4944D0103E77B09DBC2B37FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7049030EE3F915DFC5C4B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rfidemo/Pods-rfidemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78BE492289F9C88EBCBE3EDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rfidemo/Pods-rfidemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9739FB31E4ECBBB00613F4E /* Sources */ = {
@@ -152,7 +350,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9739FC21E4ECBBB00613F4E /* ViewController.m in Sources */,
+				F974A4481E50C3D900F683BC /* RFISigner.m in Sources */,
+				F974A43F1E50C3D900F683BC /* RFICardTokenRequest.m in Sources */,
+				F974A4471E50C3D900F683BC /* RFIRestRequester.m in Sources */,
+				F974A4401E50C3D900F683BC /* RFICardTokenResponse.m in Sources */,
+				F974A4421E50C3D900F683BC /* RFIConnectionProfile.m in Sources */,
+				F974A43E1E50C3D900F683BC /* RFICardThreeDs.m in Sources */,
+				F974A4451E50C3D900F683BC /* RFIPaymentResponse.m in Sources */,
+				F974A44F1E50C49C00F683BC /* FSCreditCard.m in Sources */,
+				F974A4461E50C3D900F683BC /* RFIPayService.m in Sources */,
+				F974A44C1E50C40400F683BC /* FSRFIAPI.m in Sources */,
+				F974A4411E50C3D900F683BC /* RFICommissionMode.m in Sources */,
+				F974A4431E50C3D900F683BC /* RFIHelpers.m in Sources */,
 				F9739FBF1E4ECBBB00613F4E /* AppDelegate.m in Sources */,
+				F974A4491E50C3D900F683BC /* RFITransactionDetails.m in Sources */,
+				F974A4441E50C3D900F683BC /* RFIPaymentRequest.m in Sources */,
 				F9739FBC1E4ECBBB00613F4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +481,11 @@
 		};
 		F9739FCF1E4ECBBB00613F4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1B3D206A268082266AFBA1 /* Pods-rfidemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AVE5H6VW3S;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = rfidemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yugs.apps.rfidemo;
@@ -281,9 +495,11 @@
 		};
 		F9739FD01E4ECBBB00613F4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E37A5800C84CF6AD288567 /* Pods-rfidemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AVE5H6VW3S;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = rfidemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yugs.apps.rfidemo;
@@ -310,6 +526,7 @@
 				F9739FD01E4ECBBB00613F4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
