@@ -2,6 +2,8 @@
 
 Демонстрационное приложение для работы с [библиотекой для работы с Alba РФИ банка](https://github.com/RFIBANK/iOS-SDK).
 
+![Скриншот](https://github.com/kei-sidorov/rfidemo/blob/master/screenshot.png?raw=true)
+
 ### Настройка
 
 В файле ViewController.m впишите ваш ID сервиса и приватный ключ.
