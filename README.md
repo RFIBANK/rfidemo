@@ -2,7 +2,7 @@
 
 Демонстрационное приложение для работы с [библиотекой для работы с Alba РФИ банка](https://github.com/RFIBANK/iOS-SDK).
 
-![Скриншот](https://github.com/kei-sidorov/rfidemo/blob/master/screenshot.png?raw=true)
+![Скриншот](https://github.com/kei-sidorov/rfidemo/blob/master/screenshot.png?raw=true =320x568)
 
 ### Настройка
 
