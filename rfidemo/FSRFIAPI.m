@@ -180,7 +180,8 @@
         RFITransactionDetails *transactionDetails = [payService transactionDetails:_lastTransactionId];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            callback( [transactionDetails.transactionStatus isEqualToString:@"success"] ? FSOnlinePaymentStatusSuccess : FSOnlinePaymentStatusFailed);
+            NSString *status = transactionDetails.transactionStatus;
+            callback( ([status isEqualToString:@"success"] || [status isEqualToString:@"payed"]) ? FSOnlinePaymentStatusSuccess : FSOnlinePaymentStatusFailed);
         });
         
     });
