@@ -16,8 +16,8 @@
         _serviceId = serviceId;
         _card = card;
         
-        if([expMonth length] == 1) {
-            _expMonth = [@"0" stringByAppendingString: expMonth];
+        if([_expMonth length] == 1) {
+            _expMonth = [@"0" stringByAppendingString: expYear];
         } else {
             _expMonth = expMonth;
         }

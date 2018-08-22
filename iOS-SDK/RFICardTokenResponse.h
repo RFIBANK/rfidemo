@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RFICardTokenRequest.h"
-#import "RFIRestRequester.h"
 
 @interface RFICardTokenResponse : NSObject
 {

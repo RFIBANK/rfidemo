@@ -18,6 +18,7 @@
     escString = [escString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     escString = [escString stringByReplacingOccurrencesOfString:@"=" withString:@"%3D"];
     escString = [escString stringByReplacingOccurrencesOfString:@"," withString:@"%2C"];
+    escString = [escString stringByReplacingOccurrencesOfString:@";" withString:@"%3B"];
     
     return escString;
 }

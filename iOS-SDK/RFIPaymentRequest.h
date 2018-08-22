@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class RFIReccurentParams;
+
 @interface RFIPaymentRequest : NSObject {
     NSString * _paymentType;
     NSMutableDictionary * params;
@@ -42,7 +44,7 @@
 @property (nonatomic, copy) NSString * commissionMode;
 @property (nonatomic, copy) NSString * test;
 
-//@property (nonatomic, copy) RFIReccurentPatams * recurrentParams;
+@property (nonatomic, strong) RFIReccurentParams *reccurentParams;
 
 
 @end

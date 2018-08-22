@@ -9,14 +9,18 @@
 #import "ViewController.h"
 
 #import "FSRFIAPI.h"
+#import "RFIPayService.h"
+#import "RFITransactionDetails.h"
+#import "RFIReccurentParams.h"
 
 #import <SVProgressHUD/SVProgressHUD.h>
 
 // Данные вашего сервиса
 #warning Put your data below
 
-#define RFI_SERVICE_ID @""
-#define RFI_PRIVATE_KEY @""
+#define RFI_SERVICE_ID @"<00000>"
+#define RFI_KEY @"<RFI_KEY>"
+#define RFI_SECRET @"<RFI_SECRET>"
 
 #define FORM_ERROR_DESCRIPTION @"Ошибка заполнения формы"
 #define FORM_WRONG_FIELD_FORMAT @"Неверно заполнено поле \"%@\""
@@ -51,7 +55,8 @@
 {
     if (_paymentAPI == nil)
     {
-        _paymentAPI = [[FSRFIAPI alloc] initWithServideId:RFI_SERVICE_ID privateKey:RFI_PRIVATE_KEY andTestMode:YES];
+//        _paymentAPI = [[FSRFIAPI alloc] initWithServideId:RFI_SERVICE_ID key:RFI_KEY andTestMode:YES];
+        _paymentAPI = [[FSRFIAPI alloc] initWithServideId:RFI_SERVICE_ID secret:RFI_SECRET andTestMode:YES];
     }
     
     return _paymentAPI;
@@ -178,21 +183,49 @@
                   }];
 }
 
+// Рекурентный платеж
+- (void) makeReccurentPayment: (NSString *) reccurentOrderId
+{
+    [SVProgressHUD showWithStatus:@"Отправка запроса в банк"];
+    
+    [self.paymentAPI makeReccurentPayment:reccurentOrderId
+                                orderName:_orderNameTextField.text
+                                  comment:_orderCommentTextField.text
+                                   andSum:@([_orderSumTextField.text floatValue])
+                         successCallback:^{
+                             [SVProgressHUD dismiss];
+                             [self showSuccessMessage];
+                         }
+                         failCallback:^(NSError *error) {
+                             [SVProgressHUD dismiss];
+                             [self showAlertWithError:error];
+                         }];
+}
+
 - (void) checkTransaction
 {
     [SVProgressHUD showWithStatus:@"Проверка платежа"];
     
-    [self.paymentAPI getLastTransactionStatus:^(FSOnlinePaymentStatus status) {
+    RFIPayService *payService = [[RFIPayService alloc] initWithServiceId:RFI_SERVICE_ID  andKey: RFI_KEY];
+    
+    [payService transactionDetailsWithSessionKey: [self.paymentAPI sessionKey] successBlock:^(RFITransactionDetails *transactionDetails) {
+        
         [SVProgressHUD dismiss];
         
-        if (status == FSOnlinePaymentStatusSuccess)
+        if ([transactionDetails.status isEqualToString:@"success" ])
         {
             [self showSuccessMessage];
         }else{
+            NSLog(@"status is %@", transactionDetails.status);
             NSError *error = [self errorWithDescription:@"Ошибка оплаты" andReason:@"Не удалось завершить платёж. Проверьте достаточно ли средств на счету или обратитесь в банк, выпустивший карту, для разъяснения причин отказа."];
             [self showAlertWithError:error];
         }
-    }];
+    }
+     failure:^(NSDictionary * error){
+            [SVProgressHUD dismiss];
+         NSError *error1 = [self errorWithDescription:@"Ошибка оплаты" andReason:@"Неизвестная ошибка"];
+         [self showAlertWithError:error1];
+     }];
 }
 
 #pragma mark - Form validation

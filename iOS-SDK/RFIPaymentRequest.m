@@ -7,6 +7,7 @@
 //
 
 #import "RFIPaymentRequest.h"
+#import "RFIReccurentParams.h"
 
 @implementation RFIPaymentRequest
 

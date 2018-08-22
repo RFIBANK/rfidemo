@@ -10,35 +10,35 @@
 
 @implementation RFIPaymentResponse
 
-- (id) initWithRequest: (NSDictionary *)paymentRequest {
+- (id)initWithRequest:(NSDictionary *)paymentRequest {
     self = [super init];
     
-    if(self) {
+    if (self) {
 
         _status = [paymentRequest objectForKey:@"status"];
         
         //если получили ошибки
-        if([_status isEqualToString:@"error"]) {
+        if ([_status isEqualToString:@"error"]) {
             _hasErrors = (BOOL *) YES;
             _message = [paymentRequest objectForKey:@"message"];
             _errors = [paymentRequest objectForKey:@"errors"];
         }
         
         //если успех
-        if([_status isEqualToString:@"success"]) {
+        if ([_status isEqualToString:@"success"]) {
             
             if([paymentRequest objectForKey:@"3ds"]) {
 
                 RFICardThreeDs * threeDS = [[RFICardThreeDs alloc] initWithParams: [paymentRequest objectForKey:@"3ds"]];
                 
                 _card3ds = threeDS;
-                
             }
 
             _help = [paymentRequest objectForKey:@"help"];
             _transactionId = [paymentRequest objectForKey:@"tid"];
         }
 
+        self.sessionKey = paymentRequest[@"session_key"];
     }
     
     return self;

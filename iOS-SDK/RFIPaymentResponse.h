@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RFIPaymentRequest.h"
-#import "RFIRestRequester.h"
 #import "RFICardThreeDs.h"
 
 @interface RFIPaymentResponse : NSObject
@@ -24,7 +23,7 @@
     RFICardThreeDs * _card3ds;
 }
 
-- (id) initWithRequest: (NSDictionary *)paymentRequest;
+- (id)initWithRequest:(NSDictionary *)paymentRequest;
 
 @property (nonatomic, copy) NSString * transactionId;
 @property (nonatomic, copy) NSString * terminalCode;

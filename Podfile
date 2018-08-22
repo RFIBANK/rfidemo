@@ -4,3 +4,4 @@ platform :ios, '8.0'
 target "rfidemo" do
 	pod 'SVProgressHUD'
 end
+w
